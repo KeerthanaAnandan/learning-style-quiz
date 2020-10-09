@@ -11,46 +11,37 @@
   </head>
   <body>
     <div class="wrapper">
-      <!--------------------wrapper----------------->
       <div class="quiz">
-        <!--------------------quiz----------------->
-        <div class="quiz_header hud">
-          <!--------------------hud----------------->
-          <div id="hud-item">
-            <p id="progressText" class="hud-prefix">Question</p>
-          
-          
-            <div id="progressBar">
-              <div id="progressBarFull"></div>
-            </div>
-          </div>
-          
-          <!--- <div class="quiz_timer">
-            <span class="time">00:00</span>
-          </div>-->
-        </div>
-          <!-------------------hud----------------->
+        <div class="quiz_header">
+          <div class="quiz_user">
+            <div id="hud-item">
+              <p id="progressText" class="hud-prefix">Question</p>
 
-          <div class="quiz_body">
-            <!--------------------quiz baody----------------->
-            <h4>To what extent does the following statement apply to you ?</h4>
-            <div id="questions">
-              <!-- <ul class="option_group">
+              <div id="progressBar">
+                <div id="progressBarFull"></div>
+              </div>
+            </div>
+            <!--<h4>Welcome! <span class="name"></span></h4>-->
+          </div>
+          <div class="quiz_timer">
+            <span class="time">00:00</span>
+          </div>
+        </div>
+        <div class="quiz_body">
+          <div id="questions">
+            <!-- <ul class="option_group">
               <li class="option">option 1</li>
               <li class="option">option 2</li>
               <li class="option">option 3</li>
               <li class="option">option 4</li>
             </ul> -->
-            </div>
-
-            <button class="btn-next" onclick="next()">Next Question</button>
           </div>
-          <!--------------------quiz body---------------->
+
+          <button class="btn-next" onclick="next()">Next Question</button>
         </div>
-        <!--------------------quiz----------------->
       </div>
-      <!--------------------wrapper----------------->
     </div>
+
     <!-- site.js -->
     <script src="dist/js/site.js"></script>
 
