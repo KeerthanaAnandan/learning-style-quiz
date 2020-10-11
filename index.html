@@ -43,6 +43,26 @@
         background-color: black;
         border: 2px rgb(236, 205, 68) solid;
       }
+      @media (max-width: 540px) {
+        .head {
+          font-size: 10px;
+        }
+        .container {
+          display: block;
+          margin: 50% 1%;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          height: 100vh;
+        }
+        #btn {
+          padding: 7px;
+          margin: 9px;
+        }
+        .typo {
+          font-size: 8px;
+        }
+      }
     </style>
   </head>
 
@@ -59,11 +79,13 @@
       </form>
 
       <br />
-      <p>
-        Your preferred learning style is the way in which you learn best.Three
-        learning styles that are often identified in students are : Auditory ,
-        Visual , Tactile/Kinesthetic
-      </p>
+      <section class="typo">
+        <p>Your preferred learning style is the way in which you learn best.</p>
+        <p>
+          Three learning styles that are often identified in students are :
+          Auditory , Visual , Tactile/Kinesthetic.
+        </p>
+      </section>
     </div>
 
     <script src="dist/js/start.js"></script>

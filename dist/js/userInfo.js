@@ -11,10 +11,12 @@ let typeshere = document.querySelector("span.typehere");
 let audiexp = document.querySelector(".audiexp");
 let viscoexp = document.querySelector(".viscoexp");
 let tacoexp = document.querySelector(".tacoexp");
+///hide timer
+document.querySelector(".usertime").style.display = "none";
 //////coding logic
-let apo = Math.round(user_apoints * 3.33);
-let vpo = Math.round(user_vpoints * 3.33);
-let tpo = Math.round(user_tpoints * 3.33);
+let apo = Math.round(user_apoints);
+let vpo = Math.round(user_vpoints);
+let tpo = Math.round(user_tpoints);
 
 document.querySelector("span.points").innerHTML = user_points;
 document.querySelector("span.apoints").innerHTML = apo + "%";
@@ -44,6 +46,18 @@ if (apo > vpo && apo > tpo) {
   //console.group("tac");
   tacoexp.style.display = "block";
   // document.querySelector(".wordshere").innerHTML = "bitch you are tacos";
+} else if (apo === vpo && apo > tpo) {
+  typeshere.innerHTML = "Auditory or Visual";
+  //audiexp.style.display = "block";
+  viscoexp.style.display = "block";
+} else if (tpo === vpo && apo < tpo) {
+  typeshere.innerHTML = "Tactile or Visual";
+  tacoexp.style.display = "block";
+  //viscoexp.style.display = "block";
+} else if (apo === tpo && tpo > vpo) {
+  typeshere.innerHTML = "Auditory or Tactile";
+  audiexp.style.display = "block";
+  // tacoexp.style.display = "block";
 }
 
 sessionStorage.clear();
