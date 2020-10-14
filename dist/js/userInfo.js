@@ -13,10 +13,12 @@ let viscoexp = document.querySelector(".viscoexp");
 let tacoexp = document.querySelector(".tacoexp");
 ///hide timer
 document.querySelector(".usertime").style.display = "none";
-//////coding logic
-let apo = Math.round(user_apoints);
-let vpo = Math.round(user_vpoints);
-let tpo = Math.round(user_tpoints);
+//////coding logicr
+//total
+let tota = user_apoints + user_vpoints + user_tpoints;
+let apo = Math.round((user_apoints / tota) * 100);
+let vpo = Math.round((user_vpoints / tota) * 100);
+let tpo = Math.round((user_tpoints / tota) * 100);
 
 document.querySelector("span.points").innerHTML = user_points;
 document.querySelector("span.apoints").innerHTML = apo + "%";
