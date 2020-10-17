@@ -15,7 +15,8 @@ let tacoexp = document.querySelector(".tacoexp");
 document.querySelector(".usertime").style.display = "none";
 //////coding logicr
 //total
-let tota = user_apoints + user_vpoints + user_tpoints;
+let tota = Number(user_apoints) + Number(user_vpoints) + Number(user_tpoints);
+
 let apo = Math.round((user_apoints / tota) * 100);
 let vpo = Math.round((user_vpoints / tota) * 100);
 let tpo = Math.round((user_tpoints / tota) * 100);

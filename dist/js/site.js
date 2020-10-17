@@ -610,5 +610,5 @@ function toggleActive() {
     };
   }
 }
-let usertimehide = document.querySelector(".quiz_timer");
-usertimehide.style.display = "none";
+//let usertimehide = document.querySelector(".quiz_timer");
+//usertimehide.style.display = "none";
